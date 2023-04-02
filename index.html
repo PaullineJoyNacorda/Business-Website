@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Coffeholic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Coffeholic</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i>ABOUT</a>
+      <a href="#menu" class="w3-bar-item w3-button"><i class="fa fa-bars"></i>MENU</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">MENU</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Life begins after coffee.</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Life begin after coffee.</span><br>
+    <span class="w3-large">A coffee a day keeps a grumpy away.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE CAFÉ </h3>
+  <p class="w3-center w3-large">Significant features of the café</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>A café is more than just a place that serves coffee and snacks. It is a space where people come to relax, meet friends, or work. This café is welcoming, comfortable, and functional. The staff is attentive and friendly without being intrusive, menu items are easily visible and accessible, with clear pricing and ingredient information readily available. Additionally, the layout of the cafe offers ample seating options, comfortable lighting, and a warm ambiance. At the heart of it all lies delicious food and beverages served at an affordable price point.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>A café is not just in the quality of its coffee or menu offerings, but in the overall experience it provides to customers. From welcoming décor to genuine hospitality, we strive to create an inviting atmosphere that fosters community and enhances the enjoyment of food and drink. It's not just about serving up delicious fare; it's about creating an experience for customers that leaves them feeling welcomed and taken care of. This kind of dedication and love for the craft can be felt throughout the space, and it's what makes a visit to a beloved cafe feel like coming home.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Creating a café is all about fostering a warm environment that invites patrons to unwind and take in the surroundings. Our cafe has a fresh, uncluttered look with inviting seating patterns, natural light, and subdued elements that capture the spirit of the place. The layout of the room is carefully considered to provide enough room for movement, privacy when necessary, and appropriate exposure to sunshine.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Our café provides clients with high-quality cuisine and drinks while also ensuring success and sustainability. providing marketing tactics that work by utilizing social media platforms and other advertising channels. preserving a warm atmosphere to draw repeat clients and providing specialized services like catering or private parties. Our cafe's primary offerings include keeping an eye on market trends, interacting with consumers via online reviews or feedback forms, and giving staff development top priority.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-sand w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Skills.</h3>
+      <p>Working in a café requires a specific set of skills that range from communication to multitasking. One of the most important things to possess is excellent customer service skills, being able to provide customers with an enjoyable experience at the café. Additionally, strong attention to detail and good memory capabilities are needed for taking orders correctly and recalling customers’ preferences. Being able to get along with everyone on the team, including your manager, is also vital for ensuring smooth operations. </p>
+      <p>With these skills under your belt, you’ll be sure to succeed in a café environment.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"></i>Strong communication skill</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-brown w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"></i>Exceptional customer service</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-brown w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"></i>Knowledgeable</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-brown w3-center" style="width:100%">100%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Section -->
+<div class="w3-container w3-center w3-brown" style="padding:128px 16px" id="pricing">
+  <h3>MENU</h3>
+  <p class="w3-large">Choose a coffee that aligns with your taste </p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-sand w3-xlarge w3-padding-32">Caffeinated Beverages</li>
+        <li class="w3-padding-16"><b>Cappacino</b> $ 89</li>
+        <li class="w3-padding-16"><b>Mocha</b> $ 89</li>
+        <li class="w3-padding-16"><b>Frappaccino</b>$ 89</li>
+        <li class="w3-padding-16"><b>Latte</b> $ 89</li>
+        <li class="w3-padding-16"><b>Decaffienated</b> $ 89</li>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-khaki w3-xlarge w3-padding-48">Iced cooffee</li>
+        <li class="w3-padding-16"><b>Iced Americano</b> $ 99</li>
+        <li class="w3-padding-16"><b>Frappuccino</b> $ 99</li>
+        <li class="w3-padding-16"><b>Iced Mocha</b> $ 99</li>
+        <li class="w3-padding-16"><b>Iced Caramel Macchiato</b>$ 99</li>
+        <li class="w3-padding-16"><b>Iced Latte</b> $ 99</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-sand w3-xlarge w3-padding-32">Dessert</li>
+        <li class="w3-padding-16"><b>Banana Split</b> $ 59</li>
+        <li class="w3-padding-16"><b>Cheese Cake</b> $ 59</li>
+        <li class="w3-padding-16"><b>Chocolate Ice Cream</b> $ 59</li>
+        <li class="w3-padding-16"><b>Fruit cake</b> $ 59</li>
+        <li class="w3-padding-16"><b>Oreo Madness</b> $ 59</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-sand" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Manolo Fortich, Bukidnon</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+639388378031
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>coffe.holic@gmail.com</p>
+    <br>
+
+<!-- Footer -->
+<footer class="w3-center w3-brown w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+  <p>Coffeholic</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
